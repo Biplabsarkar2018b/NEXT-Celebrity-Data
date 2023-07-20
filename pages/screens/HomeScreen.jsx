@@ -52,7 +52,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <div className="flex overflow-y-auto flex-col justify-center items-center bg-gray-100">
+    <div className="flex overflow-y-auto flex-col justify-center min-h-screen items-center bg-gray-100">
       <form
         className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3"
         onSubmit={handleSubmit}
@@ -106,7 +106,7 @@ const HomeScreen = () => {
               </div>
               <div>
                 <div className="text-gray-700">Height:</div>
-                <div className="font-bold text-black">{item?.height || 'not available'}</div>
+                <div className="font-bold text-black">{item?.height || 'not available'} metres</div>
               </div>
               <div>
                 <div className="text-gray-700">Is Alive:</div>
@@ -124,7 +124,7 @@ const HomeScreen = () => {
               </div>
               <div>
                 <div className="text-gray-700">net_worth:</div>
-                <div className="font-bold text-black">{item?.net_worth || 'not available'}</div>
+                <div className="font-bold text-black">${item?.net_worth || 'not available'}</div>
               </div>
                     <div className="text-gray-700">Occupation:</div>
               {item?.occupation &&
