@@ -52,7 +52,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <div className="flex overflow-y-auto flex-col justify-center items-center h-screen bg-gray-100">
+    <div className="flex overflow-y-auto flex-col justify-center items-center bg-gray-100">
       <form
         className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3"
         onSubmit={handleSubmit}
